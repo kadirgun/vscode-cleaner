@@ -52,7 +52,7 @@ vscode-cleaner --only deleted,remote # deleted + remote
 Search by workspace name or UUID. Case-insensitive partial match.
 
 ```bash
-vscode-cleaner --filter twitter     # name contains "twitter"
+vscode-cleaner --filter api-server  # name contains "api-server"
 vscode-cleaner --filter 04ddb8ba    # UUID starts with "04ddb8ba"
 ```
 
@@ -95,7 +95,7 @@ Flags can be combined:
 ```bash
 vscode-cleaner --only deleted --age 1y
 vscode-cleaner --only remote,duplicate --sort age
-vscode-cleaner --filter twitter --only deleted
+vscode-cleaner --filter api-server --only deleted
 vscode-cleaner --only deleted,remote,duplicate --age 6m --sort age
 ```
 

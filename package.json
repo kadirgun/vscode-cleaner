@@ -24,6 +24,15 @@
     "workspace"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kadirgun/vscode-cleaner"
+  },
+  "author": "kadirgun <kadir@kadirgun.com>",
+  "homepage": "https://github.com/kadirgun/vscode-cleaner",
+  "bugs": {
+    "url": "https://github.com/kadirgun/vscode-cleaner/issues"
+  },
   "dependencies": {
     "@inquirer/checkbox": "^5.1.4",
     "@inquirer/confirm": "^6.0.12",

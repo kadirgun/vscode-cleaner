@@ -1,6 +1,6 @@
 {
   "name": "vscode-cleaner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clean VS Code workspace storage files",
   "main": "dist/index.js",
   "bin": {

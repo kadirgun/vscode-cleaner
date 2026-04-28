@@ -1,0 +1,41 @@
+{
+  "name": "vscode-cleaner",
+  "version": "1.0.0",
+  "description": "Clean VS Code workspace storage files",
+  "main": "dist/index.js",
+  "bin": {
+    "vscode-cleaner": "./bin/vscode-cleaner.cmd"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
+    "clean": "Remove-Item -Recurse -Force dist,bin -ErrorAction SilentlyContinue",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vscode",
+    "cleaner",
+    "cli",
+    "workspace"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/checkbox": "^5.1.4",
+    "@inquirer/confirm": "^6.0.12",
+    "@inquirer/core": "^11.1.9",
+    "ansi-escapes": "^7.3.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "ora": "^9.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
